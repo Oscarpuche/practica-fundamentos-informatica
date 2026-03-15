@@ -5,7 +5,7 @@ public class Main {
         
         // Creamos las instancias de Perfil y Biografia, y les otorgamos los valores de prueba del guión
         Perfil p = new Perfil();
-        p.setIdUsuario("user1");
+        p.setIdUsuario("user10");
         p.setNombre("Pedro González");
         p.setURL("https://www.miRed.com/user1");
         p.setPassword("migatoluis0");
