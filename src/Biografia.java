@@ -12,14 +12,13 @@ public class Biografia {
     public Biografia() {
     }
 
-    /* Al igual que en la Clase Perfil, creamos un constructor para la clase Biografia con sus atributos como parametros
+    // Al igual que en la Clase Perfil, creamos un constructor para la clase Biografia con sus atributos como parametros
     public Biografia(Date fechaDeNacimiento, String aficiones, String profesion, String objetivosVitales) {
         this.fechaDeNacimiento = fechaDeNacimiento;
         this.aficiones = aficiones;
         this.profesion = profesion;
         this.objetivosVitales = objetivosVitales;
     }
-    */
 
     // Escribimos los métodos get y set para cada atributo de esta clase
     public Date getFechaDeNacimiento() {
