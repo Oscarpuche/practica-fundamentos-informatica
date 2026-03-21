@@ -43,6 +43,14 @@ public class MiRed {
             System.out.println("   "+ p.getIdUsuario() + ": " + p.getNombre());}
         }
 
+    */
+    public void visualizarRed() {
+        System.out.println("Usuarios en la red:");
+        for (Perfil p : perfiles) {
+            System.out.println(p.getIdUsuario() + ": " + p.getNombre());
+        }
+    */
+
     // Busca un perfil por su ID y lo muestra
     public void visualizarPerfil(String idUsuario) {
         for (Perfil p : perfiles) {
