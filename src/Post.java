@@ -2,7 +2,9 @@ import java.util.Date;
 import java.text.SimpleDateFormat;
 
 /**
- * Clase que representa un mensaje publicado por un usuario en la red social.
+ * Clase que representa un mensaje publicado por un usuario
+ * @param mensaje El contenido del post
+ * @param fecha La fecha y hora en que se creó el post
  */
 public class Post {
     private String mensaje;
@@ -14,18 +16,15 @@ public class Post {
      */
     public Post(String mensaje) {
         this.mensaje = mensaje;
-        // Capturamos la fecha y hora actual en el momento de crear el post
-        this.fecha = new Date();
+        this.fecha = new Date(); // Capturamos la fecha y hora actual en el momento de crear el post
     }
 
-    public Date getFecha() {return fecha;}
+    // public Date getFecha() {return fecha;} ahora mismo no es necesario pero se escribe para la etapa 3
 
     /**
-     * Método para imprimir el post con un formato elegante.
-     * Formatea la fecha para que sea legible (ej: 17/10/2023 10:30).
+     * Método para imprimir el post con un formato legible (dd/MM/yyyy HH:mm).
      */
     public void imprimePost() {
-        // Usamos SimpleDateFormat para que la fecha no se vea como un código extraño
         SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy HH:mm");
         String fechaFormateada = formato.format(fecha);
         System.out.println("      [" + fechaFormateada + "] : " + mensaje);

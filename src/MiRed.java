@@ -1,19 +1,19 @@
 import java.util.ArrayList;
 
 public class MiRed {
-    // Atributo para almacenar todos los perfiles de la red
+    // Atributos de la clase MiRed, arraylist para guardar perfiles y un contador para asignar IDs únicos a cada usuario
     private ArrayList<Perfil> perfiles;
     private int contadorUsuarios; 
 
     public MiRed() {
         this.perfiles = new ArrayList<>();
-        this.contadorUsuarios = 0;
+        this.contadorUsuarios = 0; // iniciamos el contador en 0, se incrementará cada vez que añadamos un nuevo perfil
     }
 
     // Añade un perfil a la lista
     public void añadirPerfil(Perfil p) {
         contadorUsuarios++;
-        p.setIdUsuario("user" + contadorUsuarios); // Esto activa la URL
+        p.setIdUsuario("user" + contadorUsuarios); // El id se genera aquí ya que es la red quién gestiona todos los perfiles
         this.perfiles.add(p);
     }
 
@@ -27,7 +27,7 @@ public class MiRed {
     }
 
     /*
-    // Muestra la información de todos los usuarios registrados
+    // Muestra la información de TODOS los usuarios registrados
     public void visualizarPerfiles() {
         System.out.println("--- LISTADO DE LA RED ---");
         for (Perfil p : perfiles) {
@@ -43,13 +43,6 @@ public class MiRed {
             System.out.println("   "+ p.getIdUsuario() + ": " + p.getNombre());}
         }
 
-    */
-    public void visualizarRed() {
-        System.out.println("Usuarios en la red:");
-        for (Perfil p : perfiles) {
-            System.out.println(p.getIdUsuario() + ": " + p.getNombre());
-        }
-    */
 
     // Busca un perfil por su ID y lo muestra
     public void visualizarPerfil(String idUsuario) {
