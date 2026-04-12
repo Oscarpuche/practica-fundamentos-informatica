@@ -38,7 +38,7 @@ class Biografia {
 }
 
 class Post {
-    - String mensaje
+    - String mensajes
     - String url
     - Date fecha
 
