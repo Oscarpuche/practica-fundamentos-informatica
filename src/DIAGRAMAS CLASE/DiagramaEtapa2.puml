@@ -1,0 +1,67 @@
+@startuml Etapa1
+class Perfil {
+    - String nombre
+    - String idUsuario
+    - String password
+    - String URL
+    - ArrayList<Post> listaPosts
+
+    + void getNombre()
+    + void setNombre(String nombre)
+    + String getIdUsuario()
+    + void setIdUsuario(String idUsuario)
+    + String getPassword()
+    + void setPassword(String password)
+    + void getURL()
+    + void setURL(String url)
+    + void getBiografia()
+    + void setBiografia (Biografia biografia)
+    + void AñadirPost(String texto)
+    + void imprimeInformacion()
+}
+
+class Biografia {
+    - Date fechaDeNacimiento
+    - String aficiones
+    - String profesion
+    - String objetivosVitales
+
+    + void getFechaDeNacimiento()
+    + void setFechaDeNacimiento(Date fechaDeNacimiento)
+    + void getAficiones()
+    + void setAficiones(String aficiones)
+    + void getProfesion()
+    + void setProfesion(String profesion)
+    + void getObjetivosVitales()
+    + void setObjetivosVitales(String objetivosVitales)
+    + void imprimeInformacion()
+}
+
+class Post {
+    - String mensajes
+    - String url
+    - Date fecha
+
+    + void getFecha()
+    + void setURL(String url)
+    + String getURL()
+    + String getMensaje()
+    + void imprimePost()
+}
+
+class MiRed{
+    - ArrayList<Perfil> perfiles
+    - int contadorUsuarios
+
+    + void añadirPerfil(Perfil p)
+    + Perfil getUsuario(String idUsuario)
+    + void visualizarRed()
+    + void visualizarPerfil(String idUsuario)
+    + boolean comprobarPassword(String idUsuario, String password)
+    + void añadirPost(String idUsuario, String texto)
+}
+MiRed o-- Perfil
+Perfil *-- Biografia
+Perfil *-- Post
+
+@enduml
