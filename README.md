@@ -9,7 +9,7 @@ las funcionalidades de red más complejas.\
 Aunque no se incluye cada una de las etapas por separado, sino el proyecto global, es importante definir cada uno de los estados intermedios:
 - Etapa 1: Definición de clases Perfil y Biografía, así como la relación de composición entre ambas.
 - Etapa 2: Definición de las clases MiRed y Post, así como la gestión interna de perfiles y publicaciones por parte del sistema.
-- Etapa 3: Definición de la clase PerfilProfesional, así como lah herencia de clases.
+- Etapa 3: Definición de la clase PerfilProfesional, así como la herencia de clases.
   
 Se incluye además una carpeta con todos los archivos `.puml` correspondientes a los diferentes diagramas de clases en cada etapa.
 <!-- Se hará uso de la carpeta `bin` para almacenar todos los archivos compilados. -->  
