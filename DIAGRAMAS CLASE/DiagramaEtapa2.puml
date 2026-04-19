@@ -1,4 +1,4 @@
-@startuml Etapa1
+@startuml Etapa2
 class Perfil {
     - String nombre
     - String idUsuario
