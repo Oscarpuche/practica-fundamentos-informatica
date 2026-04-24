@@ -14,7 +14,6 @@ public class PerfilProfesional extends Perfil{
     @Override
     public void imprimeInformacion() {
         System.out.println("Perfil profesional");
-        System.out.println("___________________");
         super.imprimeInformacion();
         
         System.out.println("Ocupacion actual: " + ocupacion);
